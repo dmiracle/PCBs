@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source C:\Users\dylan\Documents\PCBs\Chua\Chua.sch)
-    (date "1/29/2017 9:02:17 PM")
-    (tool "Eeschema 4.0.4-stable")
+    (source /home/dmiracle/Documents/PCBs/Chua/Chua.sch)
+    (date "Sun 05 Feb 2017 02:14:25 PM CST")
+    (tool "Eeschema 4.0.2+dfsg1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -133,17 +133,9 @@
         (alias LMC6082)
         (alias LM358N)
         (alias TL072)
-        (alias TL082)
-        (alias NE5532)
-        (alias 4558))
+        (alias TL082))
       (description "Dual Op amp (low power)")
       (docs ns/lm158.pdf)
-      (footprints
-        (fp SOIC*)
-        (fp DIP*)
-        (fp TSSOP*)
-        (fp TO-99*)
-        (fp DSBGA*))
       (fields
         (field (name Reference) U)
         (field (name Value) LM358))
@@ -177,10 +169,10 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical linear)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\linear.lib")))
+      (uri /usr/share/kicad/library/linear.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib)))
   (nets
     (net (code 1) (name "Net-(R7-Pad1)")
       (node (ref R9) (pin 2))
