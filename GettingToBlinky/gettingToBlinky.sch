@@ -1,0 +1,203 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:GTB
+LIBS:gettingToBlinky-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 7555 U1
+U 1 1 588E1AAA
+P 4850 3450
+F 0 "U1" H 5300 2650 60  0000 C CNN
+F 1 "7555" H 4850 3350 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 4850 3500 60  0001 C CNN
+F 3 "" H 4850 3500 60  0001 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 588E1B74
+P 3400 2750
+F 0 "R1" V 3480 2750 50  0000 C CNN
+F 1 "1K" V 3400 2750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 2750 50  0001 C CNN
+F 3 "" H 3400 2750 50  0000 C CNN
+	1    3400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 588E1C09
+P 3400 3500
+F 0 "R2" V 3480 3500 50  0000 C CNN
+F 1 "470K" V 3400 3500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3330 3500 50  0001 C CNN
+F 3 "" H 3400 3500 50  0000 C CNN
+	1    3400 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 588E1C65
+P 3400 4550
+F 0 "C1" H 3425 4650 50  0000 L CNN
+F 1 "1U" H 3425 4450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3438 4400 50  0001 C CNN
+F 3 "" H 3400 4550 50  0000 C CNN
+	1    3400 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 588E1D0A
+P 5700 3900
+F 0 "R3" V 5780 3900 50  0000 C CNN
+F 1 "1K" V 5700 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5630 3900 50  0001 C CNN
+F 3 "" H 5700 3900 50  0000 C CNN
+	1    5700 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 588E1D9E
+P 5700 4500
+F 0 "D1" H 5700 4600 50  0000 C CNN
+F 1 "LED" H 5700 4400 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 5700 4500 50  0001 C CNN
+F 3 "" H 5700 4500 50  0000 C CNN
+	1    5700 4500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 3200 3400 3200
+Wire Wire Line
+	3400 2900 3400 3350
+Connection ~ 3400 3200
+Wire Wire Line
+	3400 3650 3400 4400
+Wire Wire Line
+	4200 3650 3900 3650
+Wire Wire Line
+	3900 3400 3900 3950
+Wire Wire Line
+	3900 3950 3400 3950
+Connection ~ 3400 3950
+Wire Wire Line
+	4200 3400 3900 3400
+Connection ~ 3900 3650
+Wire Wire Line
+	4500 4350 4500 5100
+Wire Wire Line
+	5700 3500 5700 3750
+Wire Wire Line
+	5700 4050 5700 4300
+Wire Wire Line
+	5700 5100 5700 4700
+Connection ~ 4500 5100
+Wire Wire Line
+	5150 2000 5150 2650
+Wire Wire Line
+	3400 2000 5150 2000
+Wire Wire Line
+	4700 2000 4700 2650
+Connection ~ 4700 2000
+Wire Wire Line
+	3400 2000 3400 2600
+Wire Wire Line
+	3400 4700 3400 5100
+Text Label 4050 2000 0    60   ~ 0
+VDD
+$Comp
+L GND #PWR01
+U 1 1 588E2D0A
+P 3900 5400
+F 0 "#PWR01" H 3900 5150 50  0001 C CNN
+F 1 "GND" H 3900 5250 50  0000 C CNN
+F 2 "" H 3900 5400 50  0000 C CNN
+F 3 "" H 3900 5400 50  0000 C CNN
+	1    3900 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5400 3900 5100
+Connection ~ 3900 5100
+$Comp
+L Battery BT1
+U 1 1 588E2D51
+P 2650 3550
+F 0 "BT1" H 2750 3600 50  0000 L CNN
+F 1 "Battery" H 2750 3500 50  0000 L CNN
+F 2 "GTB:S8211R" V 2650 3590 50  0001 C CNN
+F 3 "" V 2650 3590 50  0000 C CNN
+	1    2650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3700 2650 4450
+Wire Wire Line
+	2650 3400 2650 2700
+Wire Wire Line
+	2650 2700 2850 2700
+Text Label 2850 2700 2    60   ~ 0
+VDD
+$Comp
+L GND #PWR02
+U 1 1 588E3A57
+P 2650 4450
+F 0 "#PWR02" H 2650 4200 50  0001 C CNN
+F 1 "GND" H 2650 4300 50  0000 C CNN
+F 2 "" H 2650 4450 50  0000 C CNN
+F 3 "" H 2650 4450 50  0000 C CNN
+	1    2650 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5100 5700 5100
+Wire Wire Line
+	5700 3500 5500 3500
+Wire Wire Line
+	5000 4350 5000 5100
+Connection ~ 5000 5100
+$EndSCHEMATC
