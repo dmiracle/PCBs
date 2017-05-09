@@ -1,0 +1,8 @@
+(module LW_Custom (layer F.Cu) (tedit 58C2D32C)
+  (fp_text reference REF** (at 0 4.5) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value LW_Custom (at 0 -5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)
