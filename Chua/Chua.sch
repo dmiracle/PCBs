@@ -303,9 +303,7 @@ Wire Wire Line
 	8700 2250 8700 1850
 Connection ~ 8700 1850
 Wire Wire Line
-	8200 2250 8450 2250
-Wire Wire Line
-	8450 2250 8450 1850
+	8450 1850 8450 2450
 Connection ~ 8450 1850
 Wire Wire Line
 	7500 1850 7500 2850
@@ -315,9 +313,7 @@ Wire Wire Line
 	7600 2350 7500 2350
 Connection ~ 7500 2350
 Wire Wire Line
-	8350 3050 8350 2450
-Wire Wire Line
-	8350 2450 8200 2450
+	8350 2250 8350 3050
 Wire Wire Line
 	8200 2850 8350 2850
 Connection ~ 8350 2850
@@ -365,15 +361,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 2500 5100 2500
 Connection ~ 5100 2500
-Wire Wire Line
-	4700 2400 4700 2050
-Wire Wire Line
-	4700 2050 5100 2050
 Connection ~ 5100 2050
-Wire Wire Line
-	4700 2600 4700 2950
-Wire Wire Line
-	4700 2950 5100 2950
 Wire Wire Line
 	5100 2850 5100 3300
 Connection ~ 5100 2950
@@ -384,15 +372,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 3650 5100 3650
 Connection ~ 5100 3650
-Wire Wire Line
-	5500 3750 5500 4200
-Wire Wire Line
-	5500 4200 5100 4200
 Connection ~ 5100 4200
-Wire Wire Line
-	5500 3550 5500 3200
-Wire Wire Line
-	5500 3200 5100 3200
 Connection ~ 5100 3200
 Wire Wire Line
 	5100 4050 5100 4600
@@ -415,15 +395,13 @@ Text Label 3350 2450 0    60   ~ 0
 VCC+
 Text Label 3450 3950 0    60   ~ 0
 VCC-
-Entry Wire Line
-	5700 3800 5800 3900
 $Comp
 L CONN_01X03 P1
 U 1 1 5912531E
 P 2700 3200
 F 0 "P1" H 2700 3400 50  0000 C CNN
 F 1 "CONN_01X03" V 2800 3200 50  0000 C CNN
-F 2 "" H 2700 3200 50  0000 C CNN
+F 2 "" H 2700 3200 50  0001 C CNN
 F 3 "" H 2700 3200 50  0000 C CNN
 	1    2700 3200
 	-1   0    0    1   
@@ -432,4 +410,63 @@ Wire Wire Line
 	3050 3100 2900 3100
 Wire Wire Line
 	3050 3300 2900 3300
+Wire Wire Line
+	8200 2250 8350 2250
+Wire Wire Line
+	8450 2450 8200 2450
+Wire Wire Line
+	4700 2600 4850 2600
+Wire Wire Line
+	4850 2600 4850 2050
+Wire Wire Line
+	4700 2400 4750 2400
+Wire Wire Line
+	4750 2400 4750 2950
+Wire Wire Line
+	4750 2950 5100 2950
+Wire Wire Line
+	4850 2050 5100 2050
+Wire Wire Line
+	5400 3200 5400 3750
+Wire Wire Line
+	5400 3750 5500 3750
+Wire Wire Line
+	5100 3200 5400 3200
+Wire Wire Line
+	5500 3550 5350 3550
+Wire Wire Line
+	5350 3550 5350 4200
+Wire Wire Line
+	5350 4200 5100 4200
+$Comp
+L Battery_Cell BT1
+U 1 1 591479F0
+P 3300 3000
+F 0 "BT1" H 3400 3100 50  0000 L CNN
+F 1 "Battery_Cell" H 3400 3000 50  0000 L CNN
+F 2 "DM_Custom:DM_9V_ON_BOARD" V 3300 3060 50  0001 C CNN
+F 3 "" V 3300 3060 50  0000 C CNN
+	1    3300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell BT2
+U 1 1 59147AD7
+P 3300 3500
+F 0 "BT2" H 3400 3600 50  0000 L CNN
+F 1 "Battery_Cell" H 3400 3500 50  0000 L CNN
+F 2 "DM_Custom:DM_9V_ON_BOARD" V 3300 3560 50  0001 C CNN
+F 3 "" V 3300 3560 50  0000 C CNN
+	1    3300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3100 3300 3300
+Connection ~ 3300 3200
+Wire Wire Line
+	3300 2800 3300 2450
+Connection ~ 3300 2450
+Wire Wire Line
+	3300 3600 3300 3950
+Connection ~ 3300 3950
 $EndSCHEMATC

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DM_Custom)(type KiCad)(uri "$(KIPRJMOD)/DM_Custom.pretty")(options "")(descr ""))
+)
