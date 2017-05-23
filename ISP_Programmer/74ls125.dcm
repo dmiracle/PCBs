@@ -10,8 +10,4 @@ D Quad buffer 3 State out
 K TTL buffer 3State
 $ENDCMP
 #
-$CMP C
-D Unpolarized capacitor
-$ENDCMP
-#
 #End Doc Library
