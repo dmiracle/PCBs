@@ -1,4 +1,4 @@
-update=Sun 26 Feb 2017 03:35:41 PM CST
+update=5/11/2017 10:35:53 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -56,5 +56,16 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=Patriot_Companion-cache
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1
