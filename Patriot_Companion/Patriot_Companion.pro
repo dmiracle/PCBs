@@ -1,4 +1,4 @@
-update=5/25/2017 9:49:01 PM
+update=6/5/2017 7:12:39 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,8 +33,6 @@ NetFmtName=
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -71,3 +69,5 @@ LibName29=contrib
 LibName30=valves
 LibName31=Patriot_Companion-cache
 LibName32=/home/zach/Documents/PHHS/PCBs/DM_Custom
+[general]
+version=1

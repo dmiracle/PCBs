@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Patriot_Companion-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,7 +30,6 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Patriot_Companion-cache
-LIBS:DM_Custom
 EELAYER 25 0
 EELAYER END
 $Descr A2 23386 16535
@@ -383,7 +383,7 @@ F 3 "" H 8000 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L USB_OTG P1
+L USB_OTG-RESCUE-Patriot_Companion P1
 U 1 1 58B7EAC7
 P 2100 9550
 F 0 "P1" H 2425 9425 50  0000 C CNN
@@ -817,7 +817,7 @@ SCL
 Text GLabel 6600 3500 2    39   Input ~ 0
 SDA
 $Comp
-L LED D4
+L LED-RESCUE-Patriot_Companion D4
 U 1 1 58B9EF6A
 P 7700 3900
 F 0 "D4" H 7700 4000 50  0000 C CNN
@@ -828,7 +828,7 @@ F 3 "" H 7700 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D3
+L LED-RESCUE-Patriot_Companion D3
 U 1 1 58B9F11D
 P 7700 2200
 F 0 "D3" H 7700 2300 50  0000 C CNN
@@ -1296,7 +1296,7 @@ F 3 "" H 19200 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D5
+L LED-RESCUE-Patriot_Companion D5
 U 1 1 5917919A
 P 19200 5300
 F 0 "D5" H 19200 5400 50  0000 C CNN
@@ -2054,4 +2054,6 @@ Wire Wire Line
 	20650 2000 20900 2000
 Wire Wire Line
 	20450 1900 20900 1900
+Text Notes 1750 950  0    60   ~ 0
+mysteriously not tied to 5V
 $EndSCHEMATC
