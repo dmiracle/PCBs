@@ -154,22 +154,9 @@ Text Notes 1175 1050 0    197  ~ 0
 POWER
 Text GLabel 2550 1675 2    39   Input ~ 0
 VCC
-$Comp
-L CONN_01X02 P5
-U 1 1 597FDB7A
-P 8475 1350
-F 0 "P5" H 8475 1500 50  0000 C CNN
-F 1 "CONN_01X02" V 8575 1350 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8475 1350 50  0001 C CNN
-F 3 "" H 8475 1350 50  0000 C CNN
-	1    8475 1350
-	0    -1   -1   0   
-$EndComp
-Text GLabel 8425 1550 3    39   Input ~ 0
+Text GLabel 8750 3175 0    39   Input ~ 0
 GND
-Text GLabel 8900 1675 2    39   Input ~ 0
-BUZZ
-Text Notes 7875 1125 0    197  ~ 0
+Text Notes 7900 1125 0    197  ~ 0
 SPEAKER
 $Comp
 L LED D1
@@ -201,10 +188,6 @@ Wire Wire Line
 	1950 3650 1950 3525
 Wire Wire Line
 	1950 3525 1850 3525
-Wire Wire Line
-	8525 1675 8900 1675
-Wire Wire Line
-	8525 1675 8525 1550
 Text GLabel 1575 1575 3    39   Input ~ 0
 GND
 $Comp
@@ -234,17 +217,17 @@ $EndComp
 $Comp
 L SPEAKER SP1
 U 1 1 59DC25FB
-P 8925 2350
-F 0 "SP1" H 8825 2600 50  0000 C CNN
-F 1 "SPEAKER" H 8825 2100 50  0000 C CNN
-F 2 "DM_Custom:DM_PiezSMD_PMKCS0909E4000-R1" H 8925 2350 50  0001 C CNN
-F 3 "" H 8925 2350 50  0000 C CNN
-	1    8925 2350
+P 8775 1850
+F 0 "SP1" H 8675 2100 50  0000 C CNN
+F 1 "SPEAKER" H 8675 1600 50  0000 C CNN
+F 2 "DM_Custom:DM_PiezSMD_PMKCS0909E4000-R1" H 8775 1850 50  0001 C CNN
+F 3 "" H 8775 1850 50  0000 C CNN
+	1    8775 1850
 	1    0    0    -1  
 $EndComp
-Text GLabel 8625 2250 0    39   Input ~ 0
+Text GLabel 8475 1750 0    39   Input ~ 0
 BUZZ
-Text GLabel 8625 2450 0    39   Input ~ 0
+Text GLabel 8475 1950 0    39   Input ~ 0
 GND
 $Comp
 L SW_PUSH_SMALL_H SW1
@@ -263,4 +246,21 @@ Text GLabel 1525 2475 0    39   Input ~ 0
 RST
 Text GLabel 1825 2475 2    39   Input ~ 0
 GND
+$Comp
+L CONN_01X03 P5
+U 1 1 59FFB57F
+P 8950 3275
+F 0 "P5" H 8950 3475 50  0000 C CNN
+F 1 "CONN_01X03" V 9050 3275 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 8950 3275 50  0001 C CNN
+F 3 "" H 8950 3275 50  0000 C CNN
+	1    8950 3275
+	1    0    0    -1  
+$EndComp
+Text GLabel 8750 3275 0    39   Input ~ 0
+5V
+Text GLabel 8750 3375 0    39   Input ~ 0
+SENS
+Text GLabel 4750 3100 2    39   Input ~ 0
+SENS
 $EndSCHEMATC
