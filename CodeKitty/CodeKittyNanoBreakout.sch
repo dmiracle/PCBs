@@ -263,4 +263,6 @@ Text GLabel 8750 3375 0    39   Input ~ 0
 SENS
 Text GLabel 4750 3100 2    39   Input ~ 0
 SENS
+Text Notes 7925 2950 0    197  ~ 0
+SENSORS
 $EndSCHEMATC
