@@ -1,4 +1,4 @@
-update=11/27/2017 7:10:38 PM
+update=11/27/2017 7:11:27 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,7 +25,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=../DM_Custom.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
