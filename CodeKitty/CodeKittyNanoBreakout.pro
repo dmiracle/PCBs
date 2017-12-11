@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 update=12/6/2017 9:39:55 AM
+=======
+update=12/3/2017 8:04:01 PM
+>>>>>>> Stashed changes
 version=1
 last_client=kicad
 [pcbnew]

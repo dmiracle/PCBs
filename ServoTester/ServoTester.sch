@@ -469,4 +469,19 @@ Wire Wire Line
 Connection ~ 1275 3875
 Text Label 2975 4350 0    60   ~ 0
 PWM
+$Comp
+L CONN_01X02 P?
+U 1 1 5A1CD9E3
+P 9125 2600
+F 0 "P?" H 9125 2750 50  0000 C CNN
+F 1 "CONN_01X02" V 9225 2600 50  0000 C CNN
+F 2 "" H 9125 2600 50  0000 C CNN
+F 3 "" H 9125 2600 50  0000 C CNN
+	1    9125 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8925 2550 0    60   Input ~ 0
+GND
+Text GLabel 8925 2650 0    60   Input ~ 0
+VIN
 $EndSCHEMATC
